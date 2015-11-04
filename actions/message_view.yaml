@@ -6,11 +6,11 @@ parameters:
   api_action:
     default: message_view
     description: message_view
-    required: true
+    required: false
     type: string
   api_key:
     description: Your API key
-    required: true
+    required: false
     type: string
   api_output:
     default: json

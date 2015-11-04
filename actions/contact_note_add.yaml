@@ -6,11 +6,11 @@ parameters:
   api_action:
     default: contact_note_add
     description: contact_note_add
-    required: true
+    required: false
     type: string
   api_key:
     description: Your API key
-    required: true
+    required: false
     type: string
   api_output:
     default: json

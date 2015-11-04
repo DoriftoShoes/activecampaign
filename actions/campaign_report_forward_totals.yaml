@@ -6,11 +6,11 @@ parameters:
   api_action:
     default: campaign_report_forward_totals
     description: campaign_report_forward_totals
-    required: true
+    required: false
     type: string
   api_key:
     description: Your API key
-    required: true
+    required: false
     type: string
   api_output:
     default: json

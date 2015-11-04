@@ -25,7 +25,7 @@ class ActiveCampaignAction(Action):
                                 headers=headers, params=data)
 
         results = response.json()
-        if not results['ok']:
+        if results['result_code'] is not 1:
             failure_reason = ('Failed to perform action %s: %s \
                               (status code: %s)' % (end_point, response.text,
                               response.status_code))
@@ -37,10 +37,11 @@ class ActiveCampaignAction(Action):
     def _format_params(self, params):
         output = {}
         for k, v in params.iteritems():
-            if isinstance(v, object):
+            if isinstance(v, dict):
+                print type(v)
                 for pk, pv in v.iteritems():
                     param_name = "%s[%s]" % (k, pk)
                     output[param_name] = pv
-             else:
-                 output[k] = v
+            else:
+                output[k] = v
         return output

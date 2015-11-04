@@ -6,11 +6,11 @@ parameters:
   api_action:
     default: message_delete_list
     description: message_delete_list
-    required: true
+    required: false
     type: string
   api_key:
     description: Your API key
-    required: true
+    required: false
     type: string
   api_output:
     default: json

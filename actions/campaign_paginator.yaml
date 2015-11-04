@@ -7,11 +7,11 @@ parameters:
   api_action:
     default: campaign_paginator
     description: campaign_paginator
-    required: true
+    required: false
     type: string
   api_key:
     description: Your API key
-    required: true
+    required: false
     type: string
   api_output:
     default: json

@@ -6,7 +6,7 @@ parameters:
   api_action:
     default: user_me
     description: user_me
-    required: true
+    required: false
     type: string
   api_output:
     default: json

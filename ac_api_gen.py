@@ -58,6 +58,9 @@ for method in method_list:
                 default = 'json'
             if param_name == 'api_action':
                 default = method
+                required = False
+            if param_name == 'api_key':
+                required = False
             method_dict[method]['params'][param_name] = {'type':'string'}
             method_dict[method]['params'][param_name]['description'] = param_description
             method_dict[method]['params'][param_name]['required'] = required
