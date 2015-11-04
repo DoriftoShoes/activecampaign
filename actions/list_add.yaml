@@ -17,10 +17,10 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  bounceid[]:
+  bounceid:
     description: Bounce management accounts
     required: true
-    type: string
+    type: object
   carboncopy:
     description: Comma-separated list of email addresses to send a copy of all mailings
       to upon send

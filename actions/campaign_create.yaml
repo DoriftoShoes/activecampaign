@@ -46,37 +46,37 @@ parameters:
       future mailings.</div>''.'
     required: false
     type: string
-  linkmessage[]:
+  linkmessage:
     description: 'If ''tracklinks'' variable is not set to ''all'', provide a list
       of link messages to track here. Found in message with this ID. Example: 8.'
     required: false
-    type: string
-  linkname[]:
+    type: object
+  linkname:
     description: 'If ''tracklinks'' variable is not set to ''all'', provide a list
       of link names to track here. Example: ''Google Inc.''.'
     required: false
-    type: string
-  linkurl[]:
+    type: object
+  linkurl:
     description: 'If ''tracklinks'' variable is not set to ''all'', provide a list
       of link URL''s to track here. Example: ''http://www.google.com/''.'
     required: false
-    type: string
-  m[ MESSAGE-ID ]:
+    type: object
+  m:
     description: 'Message ID to use. Example: m[1] = 100. In this example, 1 is the
       message ID, and 100 is the percentage of contacts who should get this message
       (used only in Split Test campaigns with Winner scenario). In almost all cases
       use 100 for the value.'
     required: true
-    type: string
+    type: object
   name:
     description: 'The internal campaign name. Example: ''Friday Newsletter'''
     required: true
     type: string
-  p[ LIST-ID ]:
+  p:
     description: 'Array of List ID(s) to use. Example: p[1] = 1, p[2] = 2. List ID
       should be the array key AND value.'
     required: true
-    type: string
+    type: object
   public:
     description: 'The visibility of the campaign - if the campaign should be visible
       on the public side. Example: 1 = visible, 0 = not visible.'

@@ -21,21 +21,21 @@ parameters:
     default: message_template_import
     immutable: true
     type: string
-  names[]:
+  names:
     description: 'Array of internal template names. Example: ''My Template'' (each
       array item corresponds to the same item in the ''urls'' array)'
     required: true
-    type: string
-  'p[1] ] => If template_scope is ''specific'', supply individual list ID''s. Example: p[1':
+    type: object
+  p:
     description: '1'
     required: false
-    type: string
+    type: object
   template_scope2:
     description: 'List visibility. Examples: ''all'', ''specific'''
     required: true
     type: string
-  urls[]:
+  urls:
     description: 'Array of URL''s to XML files. Example: http://mysite.com/template.xml'
     required: true
-    type: string
+    type: object
 runner_type: run-python

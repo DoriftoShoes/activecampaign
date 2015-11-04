@@ -3,12 +3,12 @@ enabled: true
 entry_point: run.py
 name: webhook_edit
 parameters:
-  action[]:
+  action:
     description: 'Event that causes the webhook to fire. Include more than one if
       desired. Possible values: subscribe, unsubscribe, update, sent, open, click,
       forward, share, bounce'
     required: true
-    type: string
+    type: object
   api_action:
     default: webhook_edit
     description: webhook_edit
@@ -31,15 +31,15 @@ parameters:
     description: ID of the webhook.
     required: true
     type: string
-  init[]:
+  init:
     description: 'Source that triggered the event. Include more than one if desired.
       Possible values: public, admin, api, system'
     required: true
-    type: string
-  lists[123]:
+    type: object
+  lists:
     description: Assign to list(s). Can accept multiple lists here.
     required: true
-    type: string
+    type: object
   name:
     description: Internal name/label for the webhook.
     required: true
