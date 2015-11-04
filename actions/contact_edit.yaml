@@ -4,6 +4,7 @@ entry_point: run.py
 name: contact_edit
 parameters:
   api_action:
+    default: contact_edit
     description: contact_edit
     required: true
     type: string

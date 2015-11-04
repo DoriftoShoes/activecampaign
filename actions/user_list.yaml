@@ -4,6 +4,7 @@ entry_point: run.py
 name: user_list
 parameters:
   api_action:
+    default: user_list
     description: user_list
     required: true
     type: string

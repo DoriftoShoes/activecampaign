@@ -50,11 +50,13 @@ for method in method_list:
             if '*' in param_name:
                 required = True
                 param_name = param_name[:-1]
+            if param_name == 'api_output':
+                default = 'json'
+            if param_name == 'api_action':
+                default = method
             method_dict[method]['params'][param_name] = {'type':'string'}
             method_dict[method]['params'][param_name]['description'] = param_description
             method_dict[method]['params'][param_name]['required'] = required
-            if param_name == 'api_output':
-                default = 'json'
             method_dict[method]['params'][param_name]['default'] = default
     time.sleep(1)
 

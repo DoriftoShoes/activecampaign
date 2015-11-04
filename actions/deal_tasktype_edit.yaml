@@ -4,6 +4,7 @@ entry_point: run.py
 name: deal_tasktype_edit
 parameters:
   api_action:
+    default: deal_tasktype_edit
     description: deal_tasktype_edit
     required: true
     type: string

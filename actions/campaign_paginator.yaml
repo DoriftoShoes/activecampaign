@@ -5,6 +5,7 @@ entry_point: run.py
 name: campaign_paginator
 parameters:
   api_action:
+    default: campaign_paginator
     description: campaign_paginator
     required: true
     type: string

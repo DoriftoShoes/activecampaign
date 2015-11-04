@@ -4,6 +4,7 @@ entry_point: run.py
 name: group_view
 parameters:
   api_action:
+    default: group_view
     description: group_view
     required: true
     type: string

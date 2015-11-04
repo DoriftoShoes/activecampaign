@@ -4,6 +4,7 @@ entry_point: run.py
 name: campaign_status
 parameters:
   api_action:
+    default: campaign_status
     description: campaign_status
     required: true
     type: string

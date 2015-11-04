@@ -13,6 +13,7 @@ parameters:
     required: false
     type: string
   api_action:
+    default: campaign_create
     description: campaign_create
     required: true
     type: string

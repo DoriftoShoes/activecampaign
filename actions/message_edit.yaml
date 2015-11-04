@@ -4,6 +4,7 @@ entry_point: run.py
 name: message_edit
 parameters:
   api_action:
+    default: message_edit
     description: message_edit
     required: true
     type: string
