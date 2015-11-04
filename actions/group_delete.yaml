@@ -10,11 +10,11 @@ parameters:
   api_action:
     default: group_delete
     description: group_delete
-    required: true
+    required: false
     type: string
   api_key:
     description: Your API key
-    required: true
+    required: false
     type: string
   api_output:
     default: json

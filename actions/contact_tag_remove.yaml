@@ -6,11 +6,11 @@ parameters:
   api_action:
     default: contact_tag_remove
     description: contact_tag_remove
-    required: true
+    required: false
     type: string
   api_key:
     description: Your API key
-    required: true
+    required: false
     type: string
   api_output:
     default: json

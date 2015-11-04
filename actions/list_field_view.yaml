@@ -6,11 +6,11 @@ parameters:
   api_action:
     default: list_field_view
     description: list_field_view
-    required: true
+    required: false
     type: string
   api_key:
     description: Your API key
-    required: true
+    required: false
     type: string
   api_output:
     default: json

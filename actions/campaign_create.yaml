@@ -15,11 +15,11 @@ parameters:
   api_action:
     default: campaign_create
     description: campaign_create
-    required: true
+    required: false
     type: string
   api_key:
     description: Your API key
-    required: true
+    required: false
     type: string
   api_output:
     default: json
