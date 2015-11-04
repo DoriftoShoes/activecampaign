@@ -26,10 +26,6 @@ parameters:
     description: 'Due date of the new deal task. Example: ''2014-03-17 09:30:00'''
     required: true
     type: string
-  end_point:
-    default: deal_task_add
-    immutable: true
-    type: string
   note:
     description: 'Text of the new deal task. Example: ''Discuss merger specifics'''
     required: false

@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: message_template_delete
-    immutable: true
-    type: string
   id:
     description: ID of the message template you wish to delete
     required: true

@@ -76,12 +76,7 @@ for method in method_dict:
                     'enabled': True,
                     'entry_point': 'run.py',
                     'description': method_dict[method]['description'],
-                    'parameters': {
-                       'end_point': {
-                         'type': 'string',
-                         'immutable': True,
-                         'default': method }
-                    }
+                    'parameters': {}
                   }
 
     for param in method_dict[method]['params']:

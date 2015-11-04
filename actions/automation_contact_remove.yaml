@@ -31,8 +31,4 @@ parameters:
       (either this or contact_email is required)
     required: true
     type: string
-  end_point:
-    default: automation_contact_remove
-    immutable: true
-    type: string
 runner_type: run-python

@@ -2,9 +2,5 @@ description: ' Developers Portal '
 enabled: true
 entry_point: run.py
 name: track_site_list
-parameters:
-  end_point:
-    default: track_site_list
-    immutable: true
-    type: string
+parameters: {}
 runner_type: run-python

@@ -21,10 +21,6 @@ parameters:
     description: Contact email address to remove the tags from (use this OR id parameter).
     required: false
     type: string
-  end_point:
-    default: contact_tag_remove
-    immutable: true
-    type: string
   id:
     description: Contact ID to remove the tags from (use this OR email parameter).
     required: false

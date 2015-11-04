@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: message_template_import
-    immutable: true
-    type: string
   names:
     description: 'Array of internal template names. Example: ''My Template'' (each
       array item corresponds to the same item in the ''urls'' array)'

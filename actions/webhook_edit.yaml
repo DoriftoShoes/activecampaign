@@ -23,10 +23,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: webhook_edit
-    immutable: true
-    type: string
   id:
     description: ID of the webhook.
     required: true

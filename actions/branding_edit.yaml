@@ -43,10 +43,6 @@ parameters:
       panel.
     required: false
     type: string
-  end_point:
-    default: branding_edit
-    immutable: true
-    type: string
   footer_text_value:
     description: 'Content of non-removeable footer. Example: text footer content'
     required: false

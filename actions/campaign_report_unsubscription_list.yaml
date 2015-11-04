@@ -21,10 +21,6 @@ parameters:
     description: ID of the campaign you wish to see social shares for
     required: true
     type: string
-  end_point:
-    default: campaign_report_unsubscription_list
-    immutable: true
-    type: string
   messageid:
     description: Message ID
     required: false

@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: contact_delete_list
-    immutable: true
-    type: string
   ids:
     description: ID's (comma-separated) of the contacts you wish to delete
     required: true

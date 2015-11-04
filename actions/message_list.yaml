@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: message_list
-    immutable: true
-    type: string
   ids:
     description: ID's (comma-separated) of each email message you want to view. Use
       'all' to return all messages.

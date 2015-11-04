@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: message_template_view
-    immutable: true
-    type: string
   id:
     description: ID of the message template you want to view
     required: true

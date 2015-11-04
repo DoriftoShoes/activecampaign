@@ -27,10 +27,6 @@ parameters:
       or contact_email is required)
     required: true
     type: string
-  end_point:
-    default: contact_automation_list
-    immutable: true
-    type: string
   limit:
     description: Limit of records per page (default and maximum is 20)
     required: true

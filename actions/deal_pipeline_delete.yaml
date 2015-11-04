@@ -17,10 +17,6 @@ parameters:
     description: json
     required: false
     type: string
-  end_point:
-    default: deal_pipeline_delete
-    immutable: true
-    type: string
   id:
     description: 'ID of the deal pipeline to delete. Example: ''2'' (Get available
       pipeline IDs with "deal_pipeline_list" call)'

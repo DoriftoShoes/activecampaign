@@ -17,8 +17,4 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: form_getforms
-    immutable: true
-    type: string
 runner_type: run-python

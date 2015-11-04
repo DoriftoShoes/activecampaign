@@ -18,10 +18,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: contact_paginator
-    immutable: true
-    type: string
   filter:
     description: 'The section filter that should be applied. This corresponds to a
       unique ID in the sectionfilter database table. Example: 11'

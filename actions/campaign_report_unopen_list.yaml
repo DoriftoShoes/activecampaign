@@ -21,10 +21,6 @@ parameters:
     description: ID of the campaign you wish to see unopens for
     required: true
     type: string
-  end_point:
-    default: campaign_report_unopen_list
-    immutable: true
-    type: string
   messageid:
     description: Message ID associated with the above campaign
     required: true

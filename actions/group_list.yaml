@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: group_list
-    immutable: true
-    type: string
   ids:
     description: A comma-separated list of User Group ID's you wish to view.
     required: true

@@ -21,10 +21,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: group_delete_list
-    immutable: true
-    type: string
   ids:
     description: ID's (comma-separated) of the User Groups you wish to delete. Must
       all be greater than 3.

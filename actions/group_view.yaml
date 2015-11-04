@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: group_view
-    immutable: true
-    type: string
   id:
     description: ID of the User Group you wish to view
     required: true

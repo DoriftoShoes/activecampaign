@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: message_template_export
-    immutable: true
-    type: string
   ids:
     description: Array of ID(s) of each message template you want to export
     required: true

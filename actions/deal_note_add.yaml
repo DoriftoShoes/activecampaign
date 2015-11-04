@@ -22,10 +22,6 @@ parameters:
       deal IDs with "deal_list" call)'
     required: true
     type: string
-  end_point:
-    default: deal_note_add
-    immutable: true
-    type: string
   note:
     description: 'Text of the note. Example: ''Follow up about this deal soon'''
     required: true

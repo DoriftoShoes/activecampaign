@@ -23,10 +23,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: webhook_add
-    immutable: true
-    type: string
   init:
     description: 'Source that triggered the event. Include more than one if desired.
       Possible values: public, admin, api, system'

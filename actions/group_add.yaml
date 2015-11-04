@@ -25,10 +25,6 @@ parameters:
     description: Brief description of the group.
     required: false
     type: string
-  end_point:
-    default: group_add
-    immutable: true
-    type: string
   group_limit_attachment_checkbox:
     description: 'Attachments limit. Example: ''on'''
     required: false

@@ -17,10 +17,6 @@ parameters:
     description: json
     required: false
     type: string
-  end_point:
-    default: deal_stage_edit
-    immutable: true
-    type: string
   id:
     description: 'ID of the deal stage to update. Example: ''2'' (Get available stage
       IDs with "deal_stage_list" call)'

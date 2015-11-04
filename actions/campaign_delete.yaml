@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: campaign_delete
-    immutable: true
-    type: string
   id:
     description: ID of the campaign you wish to delete
     required: true

@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: list_list
-    immutable: true
-    type: string
   filters:
     description: 'Filter: Perform a pattern match (LIKE) for List Name.'
     required: false
