@@ -1,0 +1,27 @@
+description: View user information.
+enabled: true
+entry_point: run.py
+name: user_me
+parameters:
+  api_action:
+    description: user_me
+    required: true
+    type: string
+  api_output:
+    default: json
+    description: xml, json, or serialize (default is XML)
+    required: false
+    type: string
+  api_pass:
+    description: Your password
+    required: true
+    type: string
+  api_user:
+    description: Your username
+    required: true
+    type: string
+  end_point:
+    default: user_me
+    immutable: true
+    type: string
+runner_type: run-python

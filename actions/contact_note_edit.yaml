@@ -1,0 +1,39 @@
+description: Edit a contact note.
+enabled: true
+entry_point: run.py
+name: contact_note_edit
+parameters:
+  api_action:
+    description: contact_note_edit
+    required: true
+    type: string
+  api_key:
+    description: Your API key
+    required: true
+    type: string
+  api_output:
+    default: json
+    description: xml, json, or serialize (default is XML)
+    required: false
+    type: string
+  end_point:
+    default: contact_note_edit
+    immutable: true
+    type: string
+  listid:
+    description: List ID to associate the note with. Use 0 for all lists.
+    required: true
+    type: string
+  note:
+    description: Actual note content. HTML will be stripped.
+    required: true
+    type: string
+  noteid:
+    description: ID of the note to edit.
+    required: true
+    type: string
+  subscriberid:
+    description: Contact ID to associate the note with.
+    required: true
+    type: string
+runner_type: run-python

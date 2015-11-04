@@ -1,0 +1,98 @@
+description: Add new contact.
+enabled: true
+entry_point: run.py
+name: contact_add
+parameters:
+  api_action:
+    description: contact_add
+    required: true
+    type: string
+  api_key:
+    description: Your API key
+    required: true
+    type: string
+  api_output:
+    default: json
+    description: xml, json, or serialize (default is XML)
+    required: false
+    type: string
+  email:
+    description: 'Email of the new contact. Example: ''test@example.com'''
+    required: true
+    type: string
+  end_point:
+    default: contact_add
+    immutable: true
+    type: string
+  field[%PERS_1%,0]:
+    description: '''value'' (You can also use the personalization tag to specify which
+      field you want updated)'
+    required: false
+    type: string
+  field[345,0]:
+    description: 'Custom field values. Example: field[345,0] = ''value''. In this
+      example, "345" is the field ID. Leave 0 as is.'
+    required: false
+    type: string
+  first_name:
+    description: 'First name of the contact. Example: ''FirstName'''
+    required: false
+    type: string
+  form:
+    description: 'Optional subscription Form ID, to inherit those redirection settings.
+      Example: 1001. This will allow you to mimic adding the contact through a subscription
+      form, where you can take advantage of the redirection settings.'
+    required: false
+    type: string
+  instantresponders[123]:
+    description: 'Use only if status = 1. Whether or not to set "send instant responders."
+      Examples: 1 = yes, 0 = no.'
+    required: false
+    type: string
+  ip4:
+    description: 'IP address of the contact. Example: ''127.0.0.1'' If not supplied,
+      it will default to ''127.0.0.1'''
+    required: false
+    type: string
+  last_name:
+    description: 'Last name of the contact. Example: ''LastName'''
+    required: false
+    type: string
+  lastmessage[123]:
+    description: 'Whether or not to set "send the last broadcast campaign." Examples:
+      1 = yes, 0 = no.'
+    required: false
+    type: string
+  noresponders[123]:
+    description: 'Whether or not to set "do not send any future responders." Examples:
+      1 = yes, 0 = no.'
+    required: false
+    type: string
+  orgname:
+    description: Organization name (if doesn't exist, this will create a new organization)
+      - MUST HAVE CRM FEATURE FOR THIS.
+    required: false
+    type: string
+  p[123]:
+    description: Assign to lists. List ID goes in brackets, as well as the value.
+    required: true
+    type: string
+  phone:
+    description: 'Phone number of the contact. Example: ''+1 312 201 0300'''
+    required: false
+    type: string
+  sdate[123]:
+    description: 'Subscribe date for particular list - leave out to use current date/time.
+      Example: ''2009-12-07 06:00:00'''
+    required: false
+    type: string
+  status[123]:
+    description: 'The status for each list the contact is added to. Examples: 1 =
+      active, 2 = unsubscribed'
+    required: false
+    type: string
+  tags:
+    description: 'Tags for this contact (comma-separated). Example: "tag1, tag2, etc"'
+    required: false
+    type: string
+runner_type: run-python

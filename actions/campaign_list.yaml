@@ -1,0 +1,70 @@
+description: View one or many campaigns.
+enabled: true
+entry_point: run.py
+name: campaign_list
+parameters:
+  api_action:
+    description: campaign_list
+    required: true
+    type: string
+  api_key:
+    description: Your API key
+    required: true
+    type: string
+  api_output:
+    default: json
+    description: xml, json, or serialize (default is XML)
+    required: false
+    type: string
+  end_point:
+    default: campaign_list
+    immutable: true
+    type: string
+  filters[cdate_since_datetime]:
+    description: Campaigns created since a certain date.
+    required: false
+    type: string
+  filters[groupids]:
+    description: Campaigns sent by users of a certain group.
+    required: false
+    type: string
+  filters[ldate_since_datetime]:
+    description: Campaigns that last sent since a certain date.
+    required: false
+    type: string
+  filters[name]:
+    description: 'Filter: Perform a pattern match (LIKE) for Campaign Name.'
+    required: false
+    type: string
+  filters[sdate_since_datetime]:
+    description: Campaigns that started sending since a certain date.
+    required: false
+    type: string
+  filters[type]:
+    description: Type of campaign. ('single', 'recurring', 'split', 'responder', 'reminder',
+      'special', 'activerss', 'text')
+    required: false
+    type: string
+  full:
+    description: Whether or not to return ALL data, or an abbreviated portion (set
+      to 1 for ALL data, and 0 for abbreviated).
+    required: false
+    type: string
+  ids:
+    description: A comma-separated list of campaign ID's you wish to view.
+    required: true
+    type: string
+  page:
+    description: 'Pagination: results are limited to 10 per page, so specify what
+      page to view.'
+    required: false
+    type: string
+  sort:
+    description: 'Field to sort on (possible values: id, cdate).'
+    required: false
+    type: string
+  sort_direction:
+    description: 'Direction of sort (possible values: ASC or DESC).'
+    required: false
+    type: string
+runner_type: run-python

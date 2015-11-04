@@ -1,0 +1,34 @@
+description: Delete deal stage.
+enabled: true
+entry_point: run.py
+name: deal_stage_delete
+parameters:
+  api_action:
+    description: deal_stage_delete
+    required: true
+    type: string
+  api_key:
+    description: Your API key
+    required: true
+    type: string
+  api_output:
+    default: json
+    description: json
+    required: false
+    type: string
+  end_point:
+    default: deal_stage_delete
+    immutable: true
+    type: string
+  id:
+    description: 'ID of the deal stage to delete. Example: ''2'' (Get available stage
+      IDs with "deal_stage_list" call)'
+    required: true
+    type: string
+  new_pipeline:
+    description: 'ID of the new pipeline to move deals in the deleted stage to. Example:
+      ''11''. NOTE: THIS IS REQUIRED IF THE TYPE IS ''move''. (Get available pipeline
+      IDs with "deal_pipeline_list" call)'
+    required: false
+    type: string
+runner_type: run-python

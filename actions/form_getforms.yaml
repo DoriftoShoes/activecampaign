@@ -1,0 +1,23 @@
+description: View all forms.
+enabled: true
+entry_point: run.py
+name: form_getforms
+parameters:
+  api_action:
+    description: form_getforms
+    required: true
+    type: string
+  api_key:
+    description: Your API key
+    required: true
+    type: string
+  api_output:
+    default: json
+    description: xml, json, or serialize (default is XML)
+    required: false
+    type: string
+  end_point:
+    default: form_getforms
+    immutable: true
+    type: string
+runner_type: run-python

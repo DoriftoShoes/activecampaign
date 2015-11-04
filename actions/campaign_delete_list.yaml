@@ -1,0 +1,27 @@
+description: Delete multiple existing campaigns.
+enabled: true
+entry_point: run.py
+name: campaign_delete_list
+parameters:
+  api_action:
+    description: campaign_delete_list
+    required: true
+    type: string
+  api_key:
+    description: Your API key
+    required: true
+    type: string
+  api_output:
+    default: json
+    description: xml, json, or serialize (default is XML)
+    required: false
+    type: string
+  end_point:
+    default: campaign_delete_list
+    immutable: true
+    type: string
+  ids:
+    description: ID's (comma-separated) of the campaigns you wish to delete
+    required: true
+    type: string
+runner_type: run-python

@@ -1,0 +1,23 @@
+description: View Design/Branding settings for a specific User Group.
+enabled: true
+entry_point: run.py
+name: branding_view
+parameters:
+  api_action:
+    description: branding_view
+    required: true
+    type: string
+  api_key:
+    description: Your API key
+    required: true
+    type: string
+  api_output:
+    default: json
+    description: xml, json, or serialize (default is XML)
+    required: false
+    type: string
+  end_point:
+    default: branding_view
+    immutable: true
+    type: string
+runner_type: run-python
