@@ -4,6 +4,7 @@ entry_point: run.py
 name: settings_edit
 parameters:
   api_action:
+    default: settings_edit
     description: settings_edit
     required: true
     type: string

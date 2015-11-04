@@ -4,6 +4,7 @@ entry_point: run.py
 name: deal_list
 parameters:
   api_action:
+    default: deal_list
     description: deal_list
     required: true
     type: string

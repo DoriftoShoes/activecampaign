@@ -4,6 +4,7 @@ entry_point: run.py
 name: campaign_list
 parameters:
   api_action:
+    default: campaign_list
     description: campaign_list
     required: true
     type: string

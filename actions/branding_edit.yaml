@@ -13,6 +13,7 @@ parameters:
     required: false
     type: string
   api_action:
+    default: branding_edit
     description: branding_edit
     required: true
     type: string

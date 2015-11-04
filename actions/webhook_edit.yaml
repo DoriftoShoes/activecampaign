@@ -10,6 +10,7 @@ parameters:
     required: true
     type: string
   api_action:
+    default: webhook_edit
     description: webhook_edit
     required: true
     type: string

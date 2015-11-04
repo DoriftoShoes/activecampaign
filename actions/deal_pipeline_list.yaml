@@ -4,6 +4,7 @@ entry_point: run.py
 name: deal_pipeline_list
 parameters:
   api_action:
+    default: deal_pipeline_list
     description: deal_pipeline_list
     required: true
     type: string

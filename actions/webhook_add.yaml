@@ -10,6 +10,7 @@ parameters:
     required: true
     type: string
   api_action:
+    default: webhook_add
     description: webhook_add
     required: true
     type: string

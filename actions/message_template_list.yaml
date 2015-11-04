@@ -4,6 +4,7 @@ entry_point: run.py
 name: message_template_list
 parameters:
   api_action:
+    default: message_template_list
     description: message_template_list
     required: true
     type: string

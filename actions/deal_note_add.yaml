@@ -4,6 +4,7 @@ entry_point: run.py
 name: deal_note_add
 parameters:
   api_action:
+    default: deal_note_add
     description: deal_note_add
     required: true
     type: string

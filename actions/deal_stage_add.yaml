@@ -4,6 +4,7 @@ entry_point: run.py
 name: deal_stage_add
 parameters:
   api_action:
+    default: deal_stage_add
     description: deal_stage_add
     required: true
     type: string

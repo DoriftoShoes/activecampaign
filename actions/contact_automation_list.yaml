@@ -4,6 +4,7 @@ entry_point: run.py
 name: contact_automation_list
 parameters:
   api_action:
+    default: contact_automation_list
     description: contact_automation_list
     required: true
     type: string

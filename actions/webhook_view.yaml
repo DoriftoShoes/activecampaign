@@ -4,6 +4,7 @@ entry_point: run.py
 name: webhook_view
 parameters:
   api_action:
+    default: webhook_view
     description: webhook_view
     required: true
     type: string

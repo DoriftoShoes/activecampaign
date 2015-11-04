@@ -8,6 +8,7 @@ parameters:
     required: true
     type: string
   api_action:
+    default: group_delete_list
     description: group_delete_list
     required: true
     type: string
