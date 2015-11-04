@@ -30,14 +30,14 @@ parameters:
     description: 'Internal template name. Example: ''My Template'''
     required: false
     type: string
-  'p[1] ] => If template_scope is ''specific'', supply individual list ID''s. Example: p[1':
+  p:
     description: '1'
     required: false
-    type: string
-  tags[]:
+    type: object
+  tags:
     description: 'Optional template tag array. Example: tags[] = ''Holiday'''
     required: false
-    type: string
+    type: object
   template_scope:
     description: 'List visibility. Examples: ''all'', ''specific'''
     required: false

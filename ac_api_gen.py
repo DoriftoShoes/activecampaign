@@ -44,12 +44,16 @@ for method in method_list:
         for row in method_args_table_rows:
             required = False
             default = None
+            param_type = 'string'
             param_parts = row.find_all('td')
             param_name = param_parts[0].text
             param_description = re.sub('\n|\r', ' ', param_parts[1].text)
             if '*' in param_name:
                 required = True
                 param_name = param_name[:-1]
+            if '[' in param_name:
+                param_type = 'object'
+                param_name = param_name.split('[')[0]
             if param_name == 'api_output':
                 default = 'json'
             if param_name == 'api_action':
@@ -58,6 +62,7 @@ for method in method_list:
             method_dict[method]['params'][param_name]['description'] = param_description
             method_dict[method]['params'][param_name]['required'] = required
             method_dict[method]['params'][param_name]['default'] = default
+            method_dict[method]['params'][param_name]['type'] = param_type
     time.sleep(1)
 
 for method in method_dict:
@@ -79,7 +84,7 @@ for method in method_dict:
     for param in method_dict[method]['params']:
         if param == 'token':
             method_dict[method]['params'][param]['required'] = False
-        output_dict['parameters'][param] = {'type': 'string'}
+        output_dict['parameters'][param] = {'type': method_dict[method]['params'][param]['type']}
         if method_dict[method]['params'][param]['default'] is not None:
             output_dict['parameters'][param]['default'] = method_dict[method]['params'][param]['default']
         output_dict['parameters'][param]['required'] = method_dict[method]['params'][param]['required']

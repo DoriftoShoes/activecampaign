@@ -29,10 +29,10 @@ parameters:
     description: 'First name of the user. Example: ''FirstName'''
     required: true
     type: string
-  'group[] ] => Assign to Groups. Example: group[1] => 1, group[2':
+  group:
     description: '2'
     required: true
-    type: string
+    type: object
   lang:
     description: 'Language setting for this user. Possible values: chinese, danish,
       dutch, english, finnish, french, german, italian, portuguese, "portuguese -

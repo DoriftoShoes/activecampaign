@@ -21,10 +21,10 @@ parameters:
     default: message_template_export
     immutable: true
     type: string
-  ids[]:
+  ids:
     description: Array of ID(s) of each message template you want to export
     required: true
-    type: string
+    type: object
   type:
     description: 'Type of export: XML or HTML'
     required: true

@@ -87,10 +87,10 @@ parameters:
     description: 'User limit quantity. Example: ''12'''
     required: false
     type: string
-  'lists[] ] => Assign to lists. Example: lists[1] => 1, lists[2':
+  lists:
     description: 2, etc.
     required: false
-    type: string
+    type: object
   pg_form_edit:
     description: 'Permission for editing subscription forms. Example: 1 = yes, 0 =
       no'
@@ -218,10 +218,10 @@ parameters:
     description: 'Permission for editing users. Example: 1 = yes, 0 = no'
     required: false
     type: string
-  sendmethods[]:
+  sendmethods:
     description: 'Assign sending methods. Example: 1,2,3'
     required: false
-    type: string
+    type: object
   title:
     description: 'Name of the group. Example: ''Group Title'''
     required: false

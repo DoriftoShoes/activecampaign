@@ -25,16 +25,16 @@ parameters:
     description: ID of the custom field you are editing
     required: true
     type: string
-  options[]:
+  options:
     description: 'Options for fields that have them (IE: checkbox, radio, dropdown,
       listbox). Example: array("label" => "value1", "label" => "value2")'
     required: false
-    type: string
-  p[1]:
+    type: object
+  p:
     description: 'Lists that the custom field is associated with. Example: array(1
       => 1, 2 => 2)'
     required: true
-    type: string
+    type: object
   perstag:
     description: Unique tag used as a placeholder for dynamic content
     required: true

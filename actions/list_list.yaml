@@ -21,10 +21,10 @@ parameters:
     default: list_list
     immutable: true
     type: string
-  filters[name]:
+  filters:
     description: 'Filter: Perform a pattern match (LIKE) for List Name.'
     required: false
-    type: string
+    type: object
   full:
     description: Whether or not to return ALL data, or an abbreviated portion (set
       to 1 for ALL data, and 0 for abbreviated).

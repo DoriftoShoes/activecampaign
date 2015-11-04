@@ -21,31 +21,10 @@ parameters:
     default: campaign_list
     immutable: true
     type: string
-  filters[cdate_since_datetime]:
-    description: Campaigns created since a certain date.
-    required: false
-    type: string
-  filters[groupids]:
+  filters:
     description: Campaigns sent by users of a certain group.
     required: false
-    type: string
-  filters[ldate_since_datetime]:
-    description: Campaigns that last sent since a certain date.
-    required: false
-    type: string
-  filters[name]:
-    description: 'Filter: Perform a pattern match (LIKE) for Campaign Name.'
-    required: false
-    type: string
-  filters[sdate_since_datetime]:
-    description: Campaigns that started sending since a certain date.
-    required: false
-    type: string
-  filters[type]:
-    description: Type of campaign. ('single', 'recurring', 'split', 'responder', 'reminder',
-      'special', 'activerss', 'text')
-    required: false
-    type: string
+    type: object
   full:
     description: Whether or not to return ALL data, or an abbreviated portion (set
       to 1 for ALL data, and 0 for abbreviated).

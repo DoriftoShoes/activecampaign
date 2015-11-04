@@ -17,10 +17,10 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  attach[]:
+  attach:
     description: 'Not supported yet: an ID of an uploaded file'
     required: false
-    type: string
+    type: object
   charset:
     description: 'Character set used. Example: ''utf-8'''
     required: true
@@ -68,18 +68,18 @@ parameters:
     description: ID of the email message you wish to edit.
     required: true
     type: string
-  message_upload_html[]:
+  message_upload_html:
     description: 'HTML version. Not supported yet: an ID of an uploaded content.'
     required: false
-    type: string
-  message_upload_text[]:
+    type: object
+  message_upload_text:
     description: 'Text version. Not supported yet: an ID of an uploaded content'
     required: false
-    type: string
-  'p[] ] => Assign to lists. Example: p[2] => 2, p[3':
+    type: object
+  p:
     description: '3'
     required: true
-    type: string
+    type: object
   priority:
     description: 'Examples: 1 = high, 3 = medium/default, 5 = low'
     required: true

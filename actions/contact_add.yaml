@@ -25,16 +25,11 @@ parameters:
     default: contact_add
     immutable: true
     type: string
-  field[%PERS_1%,0]:
+  field:
     description: '''value'' (You can also use the personalization tag to specify which
       field you want updated)'
     required: false
-    type: string
-  field[345,0]:
-    description: 'Custom field values. Example: field[345,0] = ''value''. In this
-      example, "345" is the field ID. Leave 0 as is.'
-    required: false
-    type: string
+    type: object
   first_name:
     description: 'First name of the contact. Example: ''FirstName'''
     required: false
@@ -45,11 +40,11 @@ parameters:
       form, where you can take advantage of the redirection settings.'
     required: false
     type: string
-  instantresponders[123]:
+  instantresponders:
     description: 'Use only if status = 1. Whether or not to set "send instant responders."
       Examples: 1 = yes, 0 = no.'
     required: false
-    type: string
+    type: object
   ip4:
     description: 'IP address of the contact. Example: ''127.0.0.1'' If not supplied,
       it will default to ''127.0.0.1'''
@@ -59,39 +54,39 @@ parameters:
     description: 'Last name of the contact. Example: ''LastName'''
     required: false
     type: string
-  lastmessage[123]:
+  lastmessage:
     description: 'Whether or not to set "send the last broadcast campaign." Examples:
       1 = yes, 0 = no.'
     required: false
-    type: string
-  noresponders[123]:
+    type: object
+  noresponders:
     description: 'Whether or not to set "do not send any future responders." Examples:
       1 = yes, 0 = no.'
     required: false
-    type: string
+    type: object
   orgname:
     description: Organization name (if doesn't exist, this will create a new organization)
       - MUST HAVE CRM FEATURE FOR THIS.
     required: false
     type: string
-  p[123]:
+  p:
     description: Assign to lists. List ID goes in brackets, as well as the value.
     required: true
-    type: string
+    type: object
   phone:
     description: 'Phone number of the contact. Example: ''+1 312 201 0300'''
     required: false
     type: string
-  sdate[123]:
+  sdate:
     description: 'Subscribe date for particular list - leave out to use current date/time.
       Example: ''2009-12-07 06:00:00'''
     required: false
-    type: string
-  status[123]:
+    type: object
+  status:
     description: 'The status for each list the contact is added to. Examples: 1 =
       active, 2 = unsubscribed'
     required: false
-    type: string
+    type: object
   tags:
     description: 'Tags for this contact (comma-separated). Example: "tag1, tag2, etc"'
     required: false
