@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: form_html
-    immutable: true
-    type: string
   id:
     description: 'ID of the form HTML you wish to fetch. Example: 1000'
     required: true

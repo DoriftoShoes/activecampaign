@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: message_template_edit
-    immutable: true
-    type: string
   html:
     description: 'Actual template HTML content. Example: ''<html><head><title>Template
       added via API</title></head><body>This template was added via the API</body></html>'''

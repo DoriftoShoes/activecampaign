@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: user_delete
-    immutable: true
-    type: string
   extra:
     description: Whether or not to delete other data related to this user, such as
       lists, campaigns, etc

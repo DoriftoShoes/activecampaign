@@ -21,8 +21,4 @@ parameters:
     description: ID of the campaign you wish to see forwards for
     required: true
     type: string
-  end_point:
-    default: campaign_report_forward_totals
-    immutable: true
-    type: string
 runner_type: run-python

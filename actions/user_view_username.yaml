@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: user_view_username
-    immutable: true
-    type: string
   username:
     description: Username of the user you want to view
     required: true

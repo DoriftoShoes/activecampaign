@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: contact_view_hash
-    immutable: true
-    type: string
   hash:
     description: 'Hash of the contact you are looking up. Example: ''89acb12a60fd44897dfr23edb29f0a63'''
     required: true

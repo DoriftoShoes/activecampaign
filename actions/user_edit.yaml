@@ -21,10 +21,6 @@ parameters:
     description: 'Email address of the user. Example: ''test@example.com'''
     required: true
     type: string
-  end_point:
-    default: user_edit
-    immutable: true
-    type: string
   first_name:
     description: 'First name of the user. Example: ''FirstName'''
     required: true

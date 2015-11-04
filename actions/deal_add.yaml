@@ -31,10 +31,6 @@ parameters:
     description: 'Currency of the new deal. Example: ''usd'''
     required: true
     type: string
-  end_point:
-    default: deal_add
-    immutable: true
-    type: string
   organization:
     description: 'Name of the organization of the contact for the new deal. Example:
       ''Acme Corp''. NOTE: IF THIS IS NOT PROVIDED, ''orgid'' MUST BE.'

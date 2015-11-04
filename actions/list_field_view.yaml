@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: list_field_view
-    immutable: true
-    type: string
   ids:
     description: ID's of the contact custom field you want to view (comma-separated
       for many; use 'all' to view all)

@@ -21,10 +21,6 @@ parameters:
     description: ID of the campaign you wish to see bounces for
     required: true
     type: string
-  end_point:
-    default: campaign_report_bounce_list
-    immutable: true
-    type: string
   messageid:
     description: Optional message ID
     required: false

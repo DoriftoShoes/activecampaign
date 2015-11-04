@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: contact_note_edit
-    immutable: true
-    type: string
   listid:
     description: List ID to associate the note with. Use 0 for all lists.
     required: true

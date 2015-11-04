@@ -25,8 +25,4 @@ parameters:
     description: The ID of the contact you want to view within an automation
     required: false
     type: string
-  end_point:
-    default: automation_contact_view
-    immutable: true
-    type: string
 runner_type: run-python

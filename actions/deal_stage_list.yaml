@@ -17,10 +17,6 @@ parameters:
     description: json
     required: false
     type: string
-  end_point:
-    default: deal_stage_list
-    immutable: true
-    type: string
   filters:
     description: See below code example for all filters you can pass.
     required: false

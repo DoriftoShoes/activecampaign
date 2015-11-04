@@ -32,8 +32,4 @@ parameters:
       this or contact_email is required)
     required: true
     type: string
-  end_point:
-    default: automation_contact_add
-    immutable: true
-    type: string
 runner_type: run-python

@@ -21,10 +21,6 @@ parameters:
     description: 'HEX value of header color of the new deal stage. Example: ''FF0000'''
     required: false
     type: string
-  end_point:
-    default: deal_stage_add
-    immutable: true
-    type: string
   title:
     description: 'Title of the new deal stage. Example: ''Stage Title'''
     required: true

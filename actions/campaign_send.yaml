@@ -36,10 +36,6 @@ parameters:
     description: Email address (of the contact) that will be receiving the email
     required: true
     type: string
-  end_point:
-    default: campaign_send
-    immutable: true
-    type: string
   messageid:
     description: ID of the campaign's message you wish to send (used in Split campaigns
       if you have more than one message assigned to a campaign).

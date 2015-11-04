@@ -21,10 +21,6 @@ parameters:
     description: 'Currency of the deal. Example: ''usd'''
     required: false
     type: string
-  end_point:
-    default: deal_edit
-    immutable: true
-    type: string
   id:
     description: 'ID of the deal to update. Example: ''2'' (Get available deal IDs
       with "deal_list" call)'

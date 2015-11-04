@@ -25,10 +25,6 @@ parameters:
     description: 'Date/Time format. Example: %m/%d/%Y %H:%M'
     required: true
     type: string
-  end_point:
-    default: settings_edit
-    immutable: true
-    type: string
   timeformat:
     description: 'Time format. Example: %H:%M'
     required: true

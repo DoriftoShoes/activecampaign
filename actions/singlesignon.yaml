@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: singlesignon
-    immutable: true
-    type: string
   sso_addr:
     description: 'This is the IP address user uses to access the server. Example:
       ''127.0.0.1''. This can also be $_SERVER[''REMOTE_ADDR''] if this script is

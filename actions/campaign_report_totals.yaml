@@ -21,10 +21,6 @@ parameters:
     description: ID of the campaign you wish to see totals for
     required: true
     type: string
-  end_point:
-    default: campaign_report_totals
-    immutable: true
-    type: string
   messageid:
     description: Message ID (optional)
     required: false

@@ -21,8 +21,4 @@ parameters:
     description: 'Email address of the contact you are looking up. Example: ''test@example.com'''
     required: true
     type: string
-  end_point:
-    default: contact_view_email
-    immutable: true
-    type: string
 runner_type: run-python

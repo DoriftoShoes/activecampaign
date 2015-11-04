@@ -17,8 +17,4 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: account_view
-    immutable: true
-    type: string
 runner_type: run-python

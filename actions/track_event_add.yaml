@@ -12,10 +12,6 @@ parameters:
     description: Your API key
     required: false
     type: string
-  end_point:
-    default: track_event_add
-    immutable: true
-    type: string
   event:
     description: 'The event name you want to add. Example: ''my_custom_event'''
     required: true

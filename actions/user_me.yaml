@@ -21,8 +21,4 @@ parameters:
     description: Your username
     required: true
     type: string
-  end_point:
-    default: user_me
-    immutable: true
-    type: string
 runner_type: run-python

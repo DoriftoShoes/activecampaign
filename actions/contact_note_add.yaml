@@ -22,10 +22,6 @@ parameters:
       webhook). Example: contact[email] = test@test.com'
     required: false
     type: string
-  end_point:
-    default: contact_note_add
-    immutable: true
-    type: string
   id:
     description: Contact ID to associate the note with.
     required: true

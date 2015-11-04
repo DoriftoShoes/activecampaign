@@ -17,10 +17,6 @@ parameters:
     description: json
     required: false
     type: string
-  end_point:
-    default: deal_tasktype_delete
-    immutable: true
-    type: string
   id:
     description: 'ID of the deal task type to delete. Example: ''2'''
     required: true

@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: list_field_edit
-    immutable: true
-    type: string
   id:
     description: ID of the custom field you are editing
     required: true

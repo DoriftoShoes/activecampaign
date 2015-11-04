@@ -21,10 +21,6 @@ parameters:
     description: The ID of the automation you want to view contacts for
     required: false
     type: string
-  end_point:
-    default: automation_contact_list
-    immutable: true
-    type: string
   limit:
     description: Limit of records per page (default and maximum is 100)
     required: false

@@ -22,10 +22,6 @@ parameters:
       parameter).
     required: false
     type: string
-  end_point:
-    default: contact_tag_add
-    immutable: true
-    type: string
   id:
     description: Contact ID to associate the tags with (use this OR email parameter).
     required: false

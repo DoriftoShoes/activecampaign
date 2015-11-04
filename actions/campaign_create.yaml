@@ -26,10 +26,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: campaign_create
-    immutable: true
-    type: string
   facebook:
     description: 'Whether or not to use lists'' Facebook settings. Example: 1 = yes,
       0 = no.'

@@ -22,10 +22,6 @@ parameters:
       to upon send
     required: true
     type: string
-  end_point:
-    default: list_edit
-    immutable: true
-    type: string
   get_unsubscribe_reason:
     description: 'Whether or not to ask for reason when unsubscribing. Examples: 1
       = yes, 0 = no'

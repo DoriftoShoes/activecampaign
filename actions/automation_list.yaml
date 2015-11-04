@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: automation_list
-    immutable: true
-    type: string
   limit:
     description: Limit of records per page (default and maximum is 100)
     required: false

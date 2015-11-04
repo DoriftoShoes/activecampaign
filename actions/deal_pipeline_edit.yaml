@@ -27,10 +27,6 @@ parameters:
       for this pipeline. Example: ''thb'' (Defaults to usd)'
     required: false
     type: string
-  end_point:
-    default: deal_pipeline_edit
-    immutable: true
-    type: string
   id:
     description: 'ID of the deal pipeline to update. Example: ''2'' (Get available
       pipeline IDs with "deal_pipeline_list" call)'

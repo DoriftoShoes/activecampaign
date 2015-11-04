@@ -29,10 +29,6 @@ parameters:
     description: 'Encoding used. Example: ''quoted-printable'''
     required: true
     type: string
-  end_point:
-    default: message_edit
-    immutable: true
-    type: string
   format:
     description: 'Examples: html, text, mime (both html and text)'
     required: true

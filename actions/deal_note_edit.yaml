@@ -22,10 +22,6 @@ parameters:
       IDs with "deal_list" call)'
     required: false
     type: string
-  end_point:
-    default: deal_note_edit
-    immutable: true
-    type: string
   id:
     description: 'ID of the deal note to update. Example: ''2'''
     required: true

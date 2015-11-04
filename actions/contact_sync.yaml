@@ -21,10 +21,6 @@ parameters:
     description: 'Email of the new contact. Example: ''test@example.com'''
     required: true
     type: string
-  end_point:
-    default: contact_sync
-    immutable: true
-    type: string
   field:
     description: '''value'' (You can also use the personalization tag to specify which
       field you want updated)'

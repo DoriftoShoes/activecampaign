@@ -27,10 +27,6 @@ parameters:
       for this pipeline. Example: ''thb'' (Defaults to usd)'
     required: false
     type: string
-  end_point:
-    default: deal_pipeline_add
-    immutable: true
-    type: string
   title:
     description: 'Title of the new deal pipeline. Example: ''New Pipeline'','
     required: true

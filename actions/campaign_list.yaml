@@ -17,10 +17,6 @@ parameters:
     description: xml, json, or serialize (default is XML)
     required: false
     type: string
-  end_point:
-    default: campaign_list
-    immutable: true
-    type: string
   filters:
     description: Campaigns sent by users of a certain group.
     required: false
