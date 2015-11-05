@@ -54,6 +54,8 @@ for method in method_list:
             if '[' in param_name:
                 param_type = 'object'
                 param_name = param_name.split('[')[0]
+            if param_name == 'p':
+                default = {}
             if param_name == 'api_output':
                 default = 'json'
             if param_name == 'api_action':

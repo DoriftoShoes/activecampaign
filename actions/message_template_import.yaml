@@ -23,6 +23,7 @@ parameters:
     required: true
     type: object
   p:
+    default: {}
     description: '1'
     required: false
     type: object

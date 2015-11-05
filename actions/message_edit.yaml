@@ -73,6 +73,7 @@ parameters:
     required: false
     type: object
   p:
+    default: {}
     description: '3'
     required: true
     type: object
