@@ -27,6 +27,7 @@ parameters:
     required: false
     type: object
   p:
+    default: {}
     description: 'Lists that the custom field is associated with. Example: array(1
       => 1, 2 => 2)'
     required: true

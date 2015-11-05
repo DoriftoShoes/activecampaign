@@ -66,6 +66,7 @@ parameters:
     required: false
     type: string
   p:
+    default: {}
     description: Assign to lists. List ID goes in brackets, as well as the value.
     required: true
     type: object
