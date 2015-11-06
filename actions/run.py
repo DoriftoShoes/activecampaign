@@ -20,14 +20,13 @@ class ActiveCampaignAction(Action):
 
         params = self._format_params(params)
         data = urllib.urlencode(params)
-        self.logger.info(data)
         response = requests.get(url=url,
                                 headers=headers, params=data)
 
         results = response.json()
         if results['result_code'] is not 1:
-            failure_reason = ('Failed to perform action %s: %s \
-                              (status code: %s)' % (end_point, response.text,
+            failure_reason = ('Failed to perform action: %s \
+                              (status code: %s)' % (response.text,
                               response.status_code))
             self.logger.exception(failure_reason)
             raise Exception(failure_reason)
