@@ -56,6 +56,7 @@ for method in method_list:
                 param_name = param_name.split('[')[0]
             if param_name == 'p':
                 default = {}
+                required = False
             if param_name == 'api_output':
                 default = 'json'
             if param_name == 'api_action':
