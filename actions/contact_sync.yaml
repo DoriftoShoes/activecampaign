@@ -68,7 +68,7 @@ parameters:
   p:
     default: {}
     description: Assign to lists. List ID goes in brackets, as well as the value.
-    required: true
+    required: false
     type: object
   phone:
     description: 'Phone number of the contact. Example: ''+1 312 201 0300'''

@@ -72,7 +72,7 @@ parameters:
     default: {}
     description: 'Array of List ID(s) to use. Example: p[1] = 1, p[2] = 2. List ID
       should be the array key AND value.'
-    required: true
+    required: false
     type: object
   public:
     description: 'The visibility of the campaign - if the campaign should be visible

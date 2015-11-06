@@ -71,7 +71,7 @@ parameters:
   p:
     default: {}
     description: '3'
-    required: true
+    required: false
     type: object
   priority:
     description: 'Examples: 1 = high, 3 = medium/default, 5 = low'

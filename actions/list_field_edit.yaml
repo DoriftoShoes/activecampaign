@@ -30,7 +30,7 @@ parameters:
     default: {}
     description: 'Lists that the custom field is associated with. Example: array(1
       => 1, 2 => 2)'
-    required: true
+    required: false
     type: object
   perstag:
     description: Unique tag used as a placeholder for dynamic content
